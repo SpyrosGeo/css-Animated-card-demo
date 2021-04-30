@@ -25,6 +25,8 @@ body{
     background-size: cover;
     padding: 10rem 0 0;
     max-width: 35ch;
+    border-radius:0.5rem ;
+    overflow: hidden; /* set to hidden for rounding bottom corners that are covered by the gradient*/
 }
 .card-content {
     /* padding:1.5em; */
@@ -50,5 +52,29 @@ body{
     bottom:0;
     width:calc(100% + var(--padding));
     background:var(--clr-accent-400);
+}
 
+
+
+.card-body {
+    color: rgb(255 255 255 / 0.85);
+}
+
+
+
+
+.button {
+    cursor:pointer;
+    display:inline-block;
+    text-decoration: none;
+    color:var(--clr-neutral-900);
+    background-color: var(--clr-accent-400);
+    padding: 0.5em 1.25em;
+    border-radius: 0.25em;
+
+}
+.button:hover,
+.button:focus {
+    background-color: var(--clr-neutral-100);
+    
 }
